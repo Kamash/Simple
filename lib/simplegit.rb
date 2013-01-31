@@ -8,7 +8,9 @@ class SimpleGit
   def show(treeish = 'master')
     command("git show #{treeish}")
   end
-
+ def show(treeish = 'experiment')
+    command("git show #{experiment}")
+  end
   private
   
     def command(git_cmd)
